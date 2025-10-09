@@ -1,0 +1,106 @@
+/* style.css — Jurassic World Theme for Portfolio */
+
+body {
+    background-color: #1a1a1a; /* Dark jungle background */
+    color: #e0e0e0;
+    font-family: 'Courier New', Courier, monospace; /* rugged, tech feel */
+    margin: 0;
+    padding: 0;
+    background-image: url('https://images.unsplash.com/photo-1617093724822-e06682dfdc3a'); /* optional background */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    backdrop-filter: brightness(0.6);
+}
+
+h1, h2 {
+    text-align: center;
+    color: #7CFC00; /* neon green for that Jurassic park tech style */
+    text-shadow: 2px 2px #000;
+}
+
+h1 {
+    font-size: 3em;
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 2em;
+    margin-top: 40px;
+    border-bottom: 2px solid #228B22;
+    padding-bottom: 10px;
+}
+
+p {
+    text-align: center;
+    font-size: 18px;
+    margin: 10px auto;
+    max-width: 600px;
+}
+
+ul, ol {
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+    padding: 20px;
+    font-size: 18px;
+    background-color: rgba(0, 100, 0, 0.5); /* dark green semi-transparent */
+    border: 2px solid #556B2F;
+    border-radius: 15px;
+    backdrop-filter: blur(3px);
+}
+
+li {
+    margin: 10px 0;
+    list-style-type: "🦖 ";
+}
+
+img {
+    display: block;
+    margin: 20px auto;
+    width: 220px;
+    height: auto;
+    border-radius: 50%;
+    border: 6px solid #8B4513; /* brown */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    transition: transform 0.3s ease-in-out;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+li:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Contact Section */
+ul:last-of-type li {
+    list-style-type: "📞 ";
+}
+
+/* Footer Message */
+h2:last-of-type {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 15px;
+    color: #9acd32;
+    text-shadow: 1px 1px #000;
+    margin: 30px auto;
+    max-width: 600px;
+}
+
+/* Optional: Scrollbar Styling */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #222;
+}
+::-webkit-scrollbar-thumb {
+    background: #228B22;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #32CD32;
+}

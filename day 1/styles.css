@@ -1,0 +1,78 @@
+/* style.css — Pet Shop Theme for Portfolio */
+
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #fff9f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #ff6f61; /* Soft red-pink */
+}
+
+h2 {
+    margin-top: 40px;
+    font-size: 24px;
+    border-bottom: 2px dashed #ffb347;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+p {
+    text-align: center;
+    font-size: 18px;
+    margin: 5px auto;
+    max-width: 600px;
+}
+
+ul, ol {
+    max-width: 600px;
+    margin: 0 auto 20px auto;
+    padding-left: 20px;
+    font-size: 18px;
+    background-color: #fef5e7;
+    border: 2px solid #ffd1dc;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+li {
+    margin: 10px 0;
+}
+
+img {
+    display: block;
+    margin: 20px auto;
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+    border: 5px solid #ffb347;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+h2 ul, h2 ol {
+    text-align: left;
+}
+
+/* Contact Info */
+ul:last-of-type li {
+    list-style-type: "🐾 ";
+}
+
+/* Thank You message */
+h2:last-of-type {
+    background-color: #ffebcd;
+    padding: 20px;
+    border-radius: 15px;
+    color: #444;
+}
+
+/* Add hover effect */
+li:hover {
+    background-color: #ffe4e1;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
