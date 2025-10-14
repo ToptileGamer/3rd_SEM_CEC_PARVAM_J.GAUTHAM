@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Your Resume</title>
+    <link rel="stylesheet" href="style2.css">
+    <style>
+        .resume-card {
+            background: linear-gradient(135deg, #e3f0ff 35%, #f9e8e8 100%);
+            padding: 38px;
+            max-width: 1080px;
+            margin: 30px auto;
+            border-radius: 18px;
+            box-shadow: 0 6px 24px rgba(0,0,0,0.12);
+        }
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 22px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .section-title {
+            font-size: 1.35rem;
+            font-weight: 700;
+            color: #007BFF;
+            letter-spacing: 1px;
+            margin-bottom: 12px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 6px;
+            display: flex; align-items: center; gap: 8px;
+        }
+        ul {
+            padding-left: 22px;
+        }
+    </style>
+</head>
+<body>
+    <div class="resume-card" id="resumeDisplay"></div>
+    <div class="download">
+        <button onclick="window.print()">Download as PDF</button>
+    </div>
+    <script src="resume.js"></script>
+</body>
+</html>

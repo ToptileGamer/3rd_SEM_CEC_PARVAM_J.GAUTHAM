@@ -1,0 +1,35 @@
+form-control {
+    width: 300px;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #119b51;
+    border-radius: 4px;
+}
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    margin: 50px;
+    
+    
+}
+button {
+    margin: 5px;
+}
+.buttons.for.opearations {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.container {
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    background-color: #0fc20c;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Resume Builder</h1>
+        <form id="resumeForm">
+            <label>Full Name</label>
+            <input type="text" name="name" required>
+            
+            <label>Email</label>
+            <input type="email" name="email" required>
+            
+            <label>Phone</label>
+            <input type="text" name="phone" maxlength="10" pattern="\d{10}" required oninput="this.value=this.value.replace(/[^0-9]/g,'').slice(0,10)">
+            
+            <label>Profile Photo</label>
+            <input type="file" id="profileImage" accept="image/*">
+
+            <label>Education</label>
+            <div id="educationContainer"></div>
+            <button type="button" class="add-btn" id="addEducation">+ Add</button>
+
+            <label>Experience</label>
+            <div id="experienceContainer"></div>
+            <button type="button" class="add-btn" id="addExperience">+ Add</button>
+
+            <label>Skills</label>
+            <div id="skillsContainer"></div>
+            <button type="button" class="add-btn" id="addSkills">+ Add</button>
+
+            <button type="submit">Build Resume</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+    

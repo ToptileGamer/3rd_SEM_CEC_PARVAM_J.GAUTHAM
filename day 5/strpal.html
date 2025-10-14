@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check weather the sting is palindrome or not
+    </title>
+</head>
+<body>
+    <script>
+        function isPalindrome(str) {
+            const cleanedStr = str.replace(/[^A-Za-z0-9]/g, '').toLowerCase();
+            const reversedStr = cleanedStr.split('').reverse().join('');
+            return cleanedStr === reversedStr;
+        }
+
+        const testStr = "A man, a plan, a canal: Panama";
+        if (isPalindrome(testStr)) {
+            console.log(`"${testStr}" is a palindrome.`);
+        } else {
+            console.log(`"${testStr}" is not a palindrome.`);
+        }
+    </script>
+    
+</body>
+</html>
