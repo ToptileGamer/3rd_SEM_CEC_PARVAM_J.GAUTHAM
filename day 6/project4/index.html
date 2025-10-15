@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convert temprature to celsius and Fahrenheit</title>
+</head>
+<body>
+    <h1>Convert temprature to celsius and Fahrenheit</h1>
+    <form action="">
+        <label for="temprature">Enter temprature:</label>
+        <input type="number" id="temprature" name="temprature" required>
+        <br><br>
+        <input type="radio" id="toCelsius" name="conversionType" value="toCelsius" checked>
+        <label for="toCelsius">Convert to Celsius</label>
+        <input type="radio" id="toFahrenheit" name="conversionType" value="toFahrenheit">
+        <label for="toFahrenheit">Convert to Fahrenheit</label>
+        <br><br>
+        <button type="button" onclick="convertTemprature()">Convert</button>
+    </form>
+    <h2 id="result"></h2>
+    <script>
+        function convertTemprature() {
+            const temprature = parseFloat(document.getElementById('temprature').value);
+            const conversionType = document.querySelector('input[name="conversionType"]:checked').value;
+            let result;
+
+            if (conversionType === 'toCelsius') {
+                result = (temprature - 32) * 5 / 9;
+                document.getElementById('result').innerText = `${temprature}°F is ${result.toFixed(2)}°C`;
+            } else {
+                result = (temprature * 9 / 5) + 32;
+                document.getElementById('result').innerText = `${temprature}°C is ${result.toFixed(2)}°F`;
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+body{
+    text-align: center;
+    margin-top: 20%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(13, 76, 177);
+}
+.like-btn, .unlike-btn{
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+}
+.like-btn{
+    background-color: rgb(13, 177, 76);
+    color: rgb(0, 0, 0);
+}
+.unlike-btn{
+    background-color: rgb(177, 13, 62);
+    color: rgb(6, 228, 225);
+}
+.like-count{
+    color: rgb(234, 234, 16);
+    font-size: 30px;
+}
